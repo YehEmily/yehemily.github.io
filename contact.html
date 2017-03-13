@@ -1,34 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/png" href="http://i1274.photobucket.com/albums/y434/TheSuperSilly/icon_zpsjrepj3ms.png"/>
-<title>how to get in touch with me</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|VT323" rel="stylesheet">
+<title>how to contact me</title>
 </head>
 <body>
 
+<!-- Create scrolly function -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<!-- Begin content -->
+
+<nav class="fixed-nav-bar">
+ &emsp; <a class="navbar" href="index.html">127.0.0.1</a> &emsp; &emsp;
+<a class="navbar" href="projects.html">projects</a> &emsp; &emsp; 
+<a class="navbar" href="contact.html">contact me</a> &emsp; &emsp; 
+<a class="navbar" href="EmilyYeh.pdf">resum&egrave;</a>
+
+</nav>
+
+<div class="section">
+<div class="vertical_align">
+<!-- <h1>> how to get in touch with me<img src="http://i1274.photobucket.com/albums/y434/TheSuperSilly/cursor_zpsdy81z9vs.gif" height="30" width="30" /></h1> -->
 <center>
-<table>
-  <tr>
-    <th><a href="index.html">home</a></th>
-    <th><a href="aboutme.html">about</a></th>
-    <th><a href="projects.html">projects</a></th> 
-    <th><span class="underline"><a href="contact.html">contact</a></span></th>
-    <th><a href="EmilyYeh.pdf">resume</a></th>
-  </tr>
-</table>
-</center>
-
-<h1>how to get in touch with me<img src="http://i1274.photobucket.com/albums/y434/TheSuperSilly/cursor_zpsdy81z9vs.gif" height="30" width="30"></h1>
-
-<p class="roundedborders"><b>Thanks for viewing my website!</b> <br/>If you have any questions or comments, I am reachable through any of the following media (ordered by greatest to lowest probability of fastest response time).</p>
-<p class="roundedborders"><b>Email</b>:<br />emily.yeh@students.olin.edu</p>
-<p class="roundedborders"><b>Mobile</b>:<br />(253) 343 7545</p>
-<p class="roundedborders"><b>Github</b>:<br /><a href="https://github.com/YehEmily">YehEmily</a></p>
-<p class="roundedborders"><b>LinkedIn</b>:<br /><a href="http://www.linkedin.com/in/yehemily">Emily Yeh</a></p>
-<p class="roundedborders"><b>Address</b>:<br />
+<p><b>Email</b>:<br />emily.yeh@students.olin.edu</p>
+<p><b>Mobile</b>:<br />(253) 343 7545</p>
+<p><b>Github</b>:<br /><a class="navbar" href="https://github.com/YehEmily">YehEmily</a></p>
+<p><b>LinkedIn</b>:<br /><a class="navbar" href="http://www.linkedin.com/in/yehemily">Emily Yeh</a></p>
+<p><b>Address</b>:<br />
 1000 Olin Way, MB 368 <br />
-Needham, MA 02492</p>
+Needham, MA 02492</p></div></div></center>
 
 </body>
 </html>

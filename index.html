@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="/css/styles.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/png" href="http://i1274.photobucket.com/albums/y434/TheSuperSilly/icon_zpsjrepj3ms.png"/>
-<title>hello, my name is emily yeh</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|VT323" rel="stylesheet">
+<title>hello</title>
 </head>
+
 <body>
 
+<!-- Create scrolly function -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<!-- Begin content -->
 <center>
-<table>
+<!-- <table>
   <tr>
     <th><span class="underline"><a href="index.html">home</a></span></th>
     <th><a href="aboutme.html">about</a></th>
@@ -16,22 +49,44 @@
     <th><a href="contact.html">contact</a></th>
     <th><a href="EmilyYeh.pdf">resume</a></th>
   </tr>
-</table>
+</table> -->
 </center>
 
-<h1>hello, my name is emily yeh<img src="http://i1274.photobucket.com/albums/y434/TheSuperSilly/cursor_zpsdy81z9vs.gif" height="30" width="30"></h1>
+<nav class="fixed-nav-bar">
+ &emsp; <a class="navbar" href="index.html">127.0.0.1</a> &emsp; &emsp;
+<a class="navbar" href="projects.html">projects</a> &emsp; &emsp; 
+<a class="navbar" href="contact.html">contact me</a> &emsp; &emsp; 
+<a class="navbar" href="EmilyYeh.pdf">resum&egrave;</a>
+
+</nav>
+
+<div class="section">
+<div class="vertical_align">
+<h1 class="roundedboarders">> hello, my name is emily yeh.<img src="http://i1274.photobucket.com/albums/y434/TheSuperSilly/cursor_zpsdy81z9vs.gif" height="30"></h1><br/>
 
 <center>
-<img src="http://i1274.photobucket.com/albums/y434/TheSuperSilly/flourish1-1_zps79prcue6.png" ><br/><img src="http://i1274.photobucket.com/albums/y434/TheSuperSilly/p_zpsqnjthauw.png" alt="profile_photo" height="483" width="349"><br/><img src="http://i1274.photobucket.com/albums/y434/TheSuperSilly/flourish1-2_zpssr72kqlz.png"></center>
+
+<a href="#college"><button>> learn more</button></a>
+</center></div></div>
+
+<article id="college"></article>
+<div class="section">
+<div class="vertical_align">
+<center><img src="olin_logo.png" alt="Olin Logo"/></center>
+<p>I'm a sophomore pursuing a B.S. in engineering with a concentration in computing at Franklin W. Olin College of Engineering, the smallest and newest engineering college in the world. What makes Olin special (besides being newly established about 20 years ago and accepting under 80 students per year) is that <b>we learn by doing.</b> With a projects-based curriculum that's constantly evolving, every Oliner - including me! - has the confidence and experience necessary to hit the ground running in all that we do.</p>
+
+<p>Of the languages I have practical experience with, I'm most comfortable with <b>Java</b>, <b>Python</b>, and <b>Matlab</b>. I'm also familiar with several other languages, although I may have little to no practical experience with them.</p>
+
+<center>
+
+<a href="#final"><button>> go on</button></a>
+</center></div></div>
 
 
-<p class="roundedborders">I'm a <b>sophomore</b> pursuing a <b>B.S. in engineering with a concentration in computing</b> at the <b>Franklin W. Olin College of Engineering</b>, the smallest and newest engineering college in Massachusetts that you've probably never heard of. But that's okay! There are plenty of pretty great schools out there. However, what makes Olin special (besides being established in 1997 and accepting under 80 students per year) is that <b>we learn by doing.</b> With a <b>projects-based curriculum</b> that's constantly evolving and growing, every Oliner has the <b>confidence</b> and <b>experience</b> necessary to hit the metaphorical employment ground running. Including me.</p>
-
-<p class="roundedborders">Currently, I'm looking for a <b>summer internship</b> at a <b>software company</b>. I love <b>fast-paced environments</b> and <b>being challenged</b>. My goal at all times is to be the kind of person who <b>never stops improving</b>.</p>
-
-<p class="roundedborders">Of the languages I have practical experience with, I'm the most comfortable with <b>Java</b>, <b>Python</b>, and <b>Matlab</b>. I'm also familiar with several other languages, although I may have little to no practical experience with them.</p>
-
-<p class="roundedborders">Want to get to know me a little better, or curious about what kind of work I've done? Click the tabs at the top of the page. If you find something that piques your interest, you can find a number of ways to reach me on my contact page.</p>
+<article id="final"></article>
+<div class="section">
+<div class="vertical_align">
+<p>Currently, I'm looking for a summer internship at a software company. I love fast-paced environments and being challenged. Want to get to know me a little better, or curious about what kind of work I've done? Feel free to wander around this site. If you find something that piques your interest, you can find a number of ways to reach me on my contact page.</p></div></div>
 
 </body>
 </html>

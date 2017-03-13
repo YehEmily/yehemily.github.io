@@ -1,0 +1,177 @@
+html {
+	/*background-color: black;*/
+
+
+  background: url('background.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 3%;
+    margin-bottom:5%;
+}
+
+table {
+	color: white;
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    border-spacing: 15px 0;
+
+}
+
+th, td, tr {
+	padding: 10px;
+	border: 1px solid white;
+	font-size: 16px;
+}
+
+h1 {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 26px;
+    text-align: center;
+}
+
+h3 {
+	padding: 10px;
+	margin-right: 7%;
+	margin-left: 7%;
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 24px;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    margin-right: 7%;
+    margin-left: 7%;
+    font-size: 20px;
+    background: rgb(200, 255, 255, 0.5);
+}
+
+.roundedborders {
+	border: 1px solid white;
+	border-radius: 20px;
+	padding: 10px;
+	text-align: center;
+}
+
+div.transparent {
+	background: rgba(255, 255, 255, 0.5);
+}
+
+a {
+	font-family: 'VT323', monospace;
+	text-decoration: none;
+}
+a:link {
+	color: white;
+}
+a:visited {
+	color: white;
+}
+a:hover {
+	color: white;
+}
+a:active {
+	color: silver;
+	border-bottom: 2px dotted silver;
+
+}
+
+a.navbar:hover {
+	-webkit-transition-duration: 0.4s; /*For Safari users*/
+  	transition-duration: 0.4s;
+	color: gray;
+	border: none;
+	position: relative;
+}
+
+a.navbar:active {
+	color: white;
+	border: none;
+	position: relative;
+}
+
+button {
+	-webkit-transition-duration: 0.4s; /*For Safari users*/
+  	transition-duration: 0.4s;
+	font-family: 'VT323', monospace;
+	font-size: 25px;
+	background: none;
+	border: none;
+	padding: 5px;
+	color: white;
+}
+
+button:hover {
+	-webkit-transition-duration: 0.4s; /*For Safari users*/
+  	transition-duration: 0.4s;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	background: white;
+	color: black;
+	padding: 2%;
+}
+
+span.underline {
+	border-bottom: 2px dotted white;
+}
+
+.container {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.center-justified {
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+.section {
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	vertical-align: center;
+}
+
+.vertical_align {
+	position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav {
+	background-color: black;
+	font-family: 'VT323', monospace;
+	font-size: 30px;
+	display: block;
+	border-bottom: 1px solid white;
+	text-decoration: none;
+	color: white;
+	padding-top: 15px;
+}
+
+#nav {
+	text-align: center;
+}
+
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 50px;
+}
