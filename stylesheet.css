@@ -1,0 +1,179 @@
+/* Setting background/page settings */
+html {
+    /*background-color: teal;*/
+    background-image: url("background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+/* Setting font families */
+h1, h2, h3, h4, h5, h6, a, p, button {font-family: 'Roboto', sans-serif; color: white; padding: none;}
+
+/* Setting sizes */
+h1 {font-size: 4em;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.6em;}
+h4 {font-size: 1.4em;}
+h5 {font-size: 1.2em;}
+h6 {font-size: 1.1em;}
+
+button {font-size: 2.5em;}
+
+h1 img {
+    height: 0.8em;
+    width: auto;
+}
+
+/* Hyperlinks */
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-transition-duration: 0.4s; /*For Safari users*/
+    transition-duration: 0.4s;
+    text-shadow: 0 0 1em rgb(255, 255, 255);
+}
+
+a.paragraph {
+    font-weight: bolder;
+}
+
+.red:hover {
+    color: rgb(255, 50, 94);
+}
+
+.orange:hover {
+    color: rgb(255, 193, 94);
+}
+
+.yellow:hover {
+    color: rgb(255, 241, 94);
+}
+
+.green:hover {
+    color: rgb(122, 255, 122);
+}
+
+.blue:hover {
+    color: rgb(107, 213, 255);
+}
+
+a:hover {
+    color: rgb(122, 255, 122);
+}
+
+button {
+    background: none;
+    color: white;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /*For Safari users*/
+    transition-duration: 0.4s;
+    outline: none;
+    border: none;
+    text-shadow: 0 0 1em rgb(255, 255, 255);
+}
+
+/* Miscellaneous */
+.black-background-text {
+    padding: 0.2em;
+}
+
+/* Divs and dividers */
+div.main {
+    display: inline-block;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    line-height: 0;
+    border: 0.1em solid white;
+}
+
+div.fill-page {
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    clear:both;
+}
+
+div.contact-section {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+div.center-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    ms-transform: translate(-50%, -50%);
+    display: block;
+}
+
+.margin-top {
+    padding: 10%;
+}
+
+div.fill-page-with-solid-black-background {
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    clear:both;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.black-background {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.margins {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.justified-text {
+    text-align: left;
+}
+
+#menu {
+    position:fixed;
+    top: 0em;
+    width: 100%;
+    background-color: black;
+    color: white;
+    z-index: 9999;
+    display: none;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 0.1em solid white;
+}
+
+img:hover {
+    transition: 0.5s;
+    -webkit-filter: drop-shadow(0 0 0.5em white); /* Safari 6.0 - 9.0 */
+    filter: drop-shadow(0 0 0.5em white);
+}
+
+img.more-glow:hover {
+    -webkit-filter: drop-shadow(0 0 2em white); /* Safari 6.0 - 9.0 */
+    filter: drop-shadow(0 0 2em white);
+}
+
+
+
+
+
