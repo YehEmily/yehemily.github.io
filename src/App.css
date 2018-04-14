@@ -1,31 +1,6 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
 /* Setting background/page settings */
 html {
-    /*background-color: teal;*/
-    background-color: #424242;
+    background-color: #282828;
     /*background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;*/
@@ -182,14 +157,14 @@ div.fill-page-with-solid-black-background {
     display: inline;
 }
 
-#menu {
+.padded-navbar {
     position:fixed;
     top: 0em;
     width: 100%;
     background-color: black;
     color: white;
     z-index: 9999;
-    display: none;
+    /*display: none;*/
     padding-left: 1%;
     padding-top: 1%;
     padding-bottom: 1%;
