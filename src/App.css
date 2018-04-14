@@ -22,6 +22,277 @@
   font-size: large;
 }
 
+/* Setting background/page settings */
+html {
+    /*background-color: teal;*/
+    background-color: #424242;
+    /*background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+/* Setting font families */
+h1, h2, h3, h4, h5, h6, a, p, button {font-family: 'Roboto', sans-serif; color: white; padding: none;}
+
+/* Setting sizes */
+h1 {font-size: 4em;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.6em;}
+h4 {font-size: 1.4em;}
+h5 {font-size: 1.2em;}
+h6 {font-size: 1.1em;}
+
+button {font-size: 2.5em;}
+
+h1 img {
+    height: 0.8em;
+    width: auto;
+}
+
+/* Hyperlinks */
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-transition-duration: 0.4s; /*For Safari users*/
+    transition-duration: 0.4s;
+    text-shadow: 0 0 1em rgb(255, 255, 255);
+}
+
+a.paragraph {
+    font-weight: bolder;
+}
+
+.red:hover {
+    color: rgb(255, 50, 94);
+}
+
+.orange:hover {
+    color: rgb(255, 193, 94);
+}
+
+.yellow:hover {
+    color: rgb(255, 241, 94);
+}
+
+.green:hover {
+    color: rgb(122, 255, 122);
+}
+
+.blue:hover {
+    color: rgb(107, 213, 255);
+}
+
+a:hover {
+    color: rgb(255, 50, 94);
+}
+
+button {
+    background: none;
+    color: white;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /*For Safari users*/
+    transition-duration: 0.4s;
+    outline: none;
+    border: none;
+    text-shadow: 0 0 1em rgb(255, 255, 255);
+}
+
+/* Miscellaneous */
+.black-background-text {
+    padding: 0.2em;
+}
+
+.fancy-font {
+    font-family: 'Sacramento', cursive;
+    font-size: 2em;
+}
+
+/* Divs and dividers */
+div.main {
+    display: inline-block;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    line-height: 0;
+    border: 0.1em solid white;
+}
+
+div.fill-page {
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    clear:both;
+}
+
+div.contact-section {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+div.center-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    ms-transform: translate(-50%, -50%);
+    display: block;
+}
+
+.margin-top {
+    padding: 10%;
+}
+
+div.fill-page-with-solid-black-background {
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    clear:both;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.black-background {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.margins {
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+.justified-text {
+    text-align: left;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+    display: inline;
+}
+
+#menu {
+    position:fixed;
+    top: 0em;
+    width: 100%;
+    background-color: black;
+    color: white;
+    z-index: 9999;
+    display: none;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 0.1em solid white;
+}
+
+img:hover {
+    transition: 0.5s;
+    -webkit-filter: drop-shadow(0 0 0.5em white); /* Safari 6.0 - 9.0 */
+    filter: drop-shadow(0 0 0.5em white);
+}
+
+img.more-glow:hover {
+    -webkit-filter: drop-shadow(0 0 2em white); /* Safari 6.0 - 9.0 */
+    filter: drop-shadow(0 0 2em white);
+}
+
+/* Modal Formatting */
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    margin-top: 7em;
+    padding: 0.3em;
+    border: none;
+    width: 75%;
+    box-shadow: 0 0.5em 0.5em 0 rgba(0,0,0,0.2), 0 0.2em 0.2em 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 3em;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(255, 50, 94);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Header */
+.modal-header {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.1em;
+    padding-bottom: 0.1em;
+    background-color: black;
+    color: black;
+    border-bottom: 0.1em solid white;
+}
+
+/* Body */
+.modal-body {
+    padding: 3%;
+    /*background: url("modal-background.png") no-repeat fixed;*/
+    background-size: cover;
+    background-position: center top;
+}
+
+/* Animations */
+@-webkit-keyframes animatetop {
+    from {
+        top:-300px;
+        opacity:0
+    } to {
+        top:0;
+        opacity:1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -9em;
+        opacity: 0
+    } to {
+        top: 0;
+        opacity: 1
+    }
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
