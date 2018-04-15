@@ -1,18 +1,10 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
+import FullProjects from './FullProjects';
+import Project from './Project';
 import './App.css';
 
-import geode from './images/geode-logo.png';
-import gemfire from './images/gemfire.png';
-import poe from './images/marionette.jpg';
-import calmmute from './images/Calmmute.png';
-import calendar from './images/calendar.png';
-import projects from './images/project-projects.png';
-import lights from './images/lights.png';
-import scanner from './images/scanner.png';
-import robot from './images/robot.png';
-import olin from './images/olin-logo.png';
-import modsim from './images/modsim.jpg';
-import softdes from './images/softdes.png';
+/*import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';*/
 
 class Projects extends Component {
 	render() {
@@ -27,8 +19,23 @@ class Projects extends Component {
 
 		return (
 			<div id="resume" className="fill-page">
+			<div className="center-page">
 			  <div className="margin-top">
-			    <h1>WHAT I DID <span style={highlight1}>THIS SUMMER</span></h1>
+			  <Switch>
+			  	<Route exact path='/projects' component={FullProjects}/>
+    			<Route path='/projects/:tag' component={Project}/>
+			  </Switch>
+			  </div>
+			</div>
+			</div>
+		);
+	}
+}
+
+export default Projects;
+
+
+/*<h1>WHAT I DID <span style={highlight1}>THIS SUMMER</span></h1>
 			    <h5>MAY 2017 - AUGUST 2017</h5>
 			    <div className="cursor-pointer" id="pivotal">
 
@@ -57,11 +64,4 @@ class Projects extends Component {
 			    <h5>SEPTEMBER 2015 - MAY 2016</h5>
 
 			    <div className="cursor-pointer" id="modsim"><img src={modsim} style={size10} /></div> &emsp; 
-			    <div className="cursor-pointer" id="softdes"><img src={softdes} style={size10} /></div>
-			  </div>
-			</div>
-		);
-	}
-}
-
-export default Projects;
+			    <div className="cursor-pointer" id="softdes"><img src={softdes} style={size10} /></div>*/

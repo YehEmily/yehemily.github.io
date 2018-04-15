@@ -5,7 +5,6 @@ import Contact from './Contact';
 import Projects from './Projects';
 import logo from './logo.svg';
 import './App.css';
-
 import { Switch, Route, Link } from 'react-router-dom';
 
 class App extends Component {
@@ -18,7 +17,6 @@ class App extends Component {
 	            <Link className="yellow" to='/projects'>Projects</Link> &emsp; 
 	            <Link className="green" to='/contact'>Contact Me</Link>
 	        </nav>
-
 	        <Switch>
 	          <Route exact path='/' component={HomePage}/>
 	          <Route path='/bio' component={Bio}/>
