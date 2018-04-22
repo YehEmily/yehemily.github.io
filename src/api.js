@@ -40,20 +40,8 @@ const ProjectsAPI = {
   get: function(id) {
     const isProject = p => p.tag === id
     return this.projects.find(isProject)
-  }
+  },
+  howmany: function() { return 9 }
 }
 
 export default ProjectsAPI;
-
-/*import geode from './images/geode-logo.png';
-import gemfire from './images/gemfire.png';
-import poe from './images/marionette.jpg';
-import calmmute from './images/Calmmute.png';
-import calendar from './images/calendar.png';
-import projects from './images/project-projects.png';
-import lights from './images/lights.png';
-import scanner from './images/scanner.png';
-import robot from './images/robot.png';
-import olin from './images/olin-logo.png';
-import modsim from './images/modsim.jpg';
-import softdes from './images/softdes.png';*/

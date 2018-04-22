@@ -8,25 +8,12 @@ import './App.css';
 
 class Projects extends Component {
 	render() {
-		var size6 = { height: '6em' };
-		var size10 = { height: '10em' };
-		var width10 = { width: '10em' };
-
-		var highlight1 = { color: 'rgb(255, 193, 94)' };
-		var highlight2 = { color: 'rgb(255, 241, 94)' };
-		var highlight3 = { color: 'rgb(122, 255, 122)' };
-		var highlight4 = { color: 'rgb(107, 213, 255)' };
-
 		return (
-			<div id="resume" className="fill-page">
-			<div className="center-page">
-			  <div className="margin-top">
+			<div className="just-for-projects">
 			  <Switch>
 			  	<Route exact path='/projects' component={FullProjects}/>
     			<Route path='/projects/:tag' component={Project}/>
 			  </Switch>
-			  </div>
-			</div>
 			</div>
 		);
 	}

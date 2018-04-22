@@ -12,12 +12,12 @@ class Bio extends Component {
         <div className="center-page">
           <h1><span style={highlight}>WHO</span> AM I?</h1>
 
-          <p className="margins justified-text">I'm a junior pursuing a B.S. in engineering with a concentration in computing at <a target="_blank" className="paragraph"
+          <p className="margins justified-text">I'm a junior pursuing a B.S. in engineering with a concentration in computing at <a target="_blank" rel="noopener noreferrer" className="paragraph"
                   href="http://www.olin.edu/">Olin College of Engineering</a> in Needham, Massachusetts. I
-             mainly program in Java, although I've also worked on projects in Python and Matlab. I also enjoy web design, and I built this entire website from scratch using HTML/CSS and a hint of JavaScript/jQuery. Some of my coolest current and past projects can be viewed in my <a href="#resume">resum&eacute;</a>. Take a look!</p>
+             mainly program in Java, although I've also worked on projects in Python and Matlab. I also enjoy web design, and I built this entire website from scratch using HTML/CSS and a hint of JavaScript/jQuery. Some of my coolest current and past projects can be viewed in my resum&eacute;. Take a look!</p>
 
-          <p className="margins justified-text">This past summer, I worked at <a target="_blank" className="paragraph" href="https://pivotal.io/">Pivotal</a> as an intern on the
-             GemFire Management and Monitoring (M&M) team. During this time, I worked on <a target="_blank" className="paragraph" href="https://pivotal.io/pivotal-gemfire">Pivotal GemFire</a> and its open-source counterpart, <a target="_blank" className="paragraph" href="http://geode.apache.org/">Apache Geode</a>. I had
+          <p className="margins justified-text">This past summer, I worked at <a target="_blank" rel="noopener noreferrer" className="paragraph" href="https://pivotal.io/">Pivotal</a> as an intern on the
+             GemFire Management and Monitoring (M&M) team. During this time, I worked on <a target="_blank" rel="noopener noreferrer" className="paragraph" href="https://pivotal.io/pivotal-gemfire">Pivotal GemFire</a> and its open-source counterpart, <a target="_blank" rel="noopener noreferrer" className="paragraph" href="http://geode.apache.org/">Apache Geode</a>. I had
              the opportunity to pair-program with a number of Pivots to squash bugs and create features, and I learned the ropes of how a software company like
              Pivotal is operated. I participated in a workshop organized and run by Elisabeth Hendrickson,
              Pivotal's VP of Data R&D, which dove into agile development and how it can

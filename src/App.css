@@ -125,6 +125,12 @@ div.center-page {
     display: block;
 }
 
+div.just-for-projects {
+    padding: 10%;
+    vertical-align: center;
+    text-align: center;
+}
+
 .margin-top {
     padding: 10%;
 }

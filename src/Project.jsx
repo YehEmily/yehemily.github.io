@@ -29,34 +29,36 @@ const Project = (props) => {
   var whichproject;
   switch(project.tag) {
     case 1:
-    whichproject = <div><img src={geode} style={size6} /> &emsp; <img src={gemfire} style={size6} /></div>;
+    whichproject = <div><img src={geode} style={size6} alt="project cover" /> &emsp; <img src={gemfire} style={size6} alt="project cover" /></div>;
     break;
     case 2:
-    whichproject = <img src={calmmute} style={size10} />;
+    whichproject = <img src={calmmute} style={size10} alt="project cover" />;
     break;
     case 3:
-    whichproject = <img src={calendar} style={size10} />;
+    whichproject = <img src={calendar} style={size10} alt="project cover" />;
     break;
     case 4:
-    whichproject = <img src={projects} style={size10} />;
+    whichproject = <img src={projects} style={size10} alt="project cover" />;
     break;
     case 5:
-    whichproject = <img src={poe} style={size10} />;
+    whichproject = <img src={poe} style={size10} alt="project cover" />;
     break;
     case 6:
-    whichproject = <div><img src={lights} style={size10} /> &emsp; 
-                        <img src={scanner} style={size10} /> &emsp; 
-                        <img src={robot} style={size10} /></div>;
+    whichproject = <div><img src={lights} style={size10} alt="project cover" /> &emsp; 
+                        <img src={scanner} style={size10} alt="project cover" /> &emsp; 
+                        <img src={robot} style={size10} alt="project cover" /></div>;
     break;
     case 7:
-    whichproject = <img src={olin} style={width10} />;
+    whichproject = <img src={olin} style={width10} alt="project cover" />;
     break;
     case 8:
-    whichproject = <img src={modsim} style={size10} />;
+    whichproject = <img src={modsim} style={size10} alt="project cover" />;
     break;
     case 9:
-    whichproject = <img src={softdes} style={size10} />;
+    whichproject = <img src={softdes} style={size10} alt="project cover" />;
     break;
+    default:
+    whichproject = <p>Sorry, this project could not be found.</p>
   }
 
   return (

@@ -20,11 +20,11 @@ class Contact extends Component {
           <div className="main black-background">
             <h1 className="black-background-text">LET'S GET <span style={highlight}>IN TOUCH</span></h1>
             <h5>AND THANKS AGAIN FOR VISITING!</h5>
-            <a target="_blank" href="mailto:emily.yeh@students.olin.edu"><img src={email} style={size}/></a> &emsp;
-            <a target="_blank" href="https://github.com/YehEmily"><img src={github} style={size}/></a> &emsp; 
-            <a target="_blank" href="https://www.linkedin.com/in/yehemily/"><img src={linkedin} style={size}/></a>
+            <a target="_blank" rel="noopener noreferrer" href="mailto:emily.yeh@students.olin.edu"><img src={email} style={size} alt="icon"/></a> &emsp; &emsp;
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/YehEmily"><img src={github} style={size} alt="icon"/></a> &emsp; &emsp;
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/yehemily/"><img src={linkedin} style={size} alt="icon"/></a>
 
-            <h5><a target="_blank" href="EmilyYeh.pdf">PS: YOU CAN DOWNLOAD MY RESUME HERE.</a></h5>
+            <h5><a target="_blank" rel="noopener noreferrer" href="EmilyYeh.pdf">PS: YOU CAN DOWNLOAD MY RESUME HERE.</a></h5>
           </div>
         </div>
       </div>

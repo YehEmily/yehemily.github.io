@@ -3,7 +3,6 @@ import HomePage from './HomePage';
 import Bio from './Bio';
 import Contact from './Contact';
 import Projects from './Projects';
-import logo from './logo.svg';
 import './App.css';
 import { Switch, Route, Link } from 'react-router-dom';
 
