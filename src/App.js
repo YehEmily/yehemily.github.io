@@ -3,6 +3,7 @@ import HomePage from './HomePage';
 import Bio from './Bio';
 import Contact from './Contact';
 import Projects from './Projects';
+import ArtProjects from './ArtProjects';
 import './App.css';
 import { Switch, Route, Link } from 'react-router-dom';
 
@@ -11,16 +12,18 @@ class App extends Component {
     return (
       <div>
 	      	<nav className="padded-navbar">
-	         	<Link className="red" to='/'>Home</Link> &emsp; 
-	            <Link className="orange" to='/bio'>Bio</Link> &emsp; 
-	            <Link className="yellow" to='/projects'>Projects</Link> &emsp; 
-	            <Link className="green" to='/contact'>Contact Me</Link>
+	         	<Link className="navbar" to='/'>127.0.0.1</Link> &emsp; &emsp; 
+	            <Link className="navbar" to='/all-about-me'>ABOUT</Link> &emsp; &emsp; 
+	            <Link className="navbar" to='/my-past-work'>PROJECTS</Link> &emsp; &emsp; 
+	            <Link className="navbar" to='/things-i-made'>ARTWORK</Link> &emsp; &emsp; 
+	            <Link className="navbar" to='/lets-talk-soon'>CONTACT ME</Link>
 	        </nav>
 	        <Switch>
 	          <Route exact path='/' component={HomePage}/>
-	          <Route path='/bio' component={Bio}/>
-	          <Route path='/projects' component={Projects}/>
-	          <Route path='/contact' component={Contact}/>
+	          <Route path='/all-about-me' component={Bio}/>
+	          <Route path='/my-past-work' component={Projects}/>
+	          <Route path='/things-i-made' component={ArtProjects}/>
+	          <Route path='/lets-talk-soon' component={Contact}/>
 	        </Switch>
       </div>
     );

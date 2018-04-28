@@ -1,30 +1,31 @@
 import React, { Component } from 'react';
 import './App.css';
-import email from './images/email.png'
-import github from './images/github.png'
-import linkedin from './images/linkedin.png'
+import GithubImage from './GithubImage'
+import LinkedInImage from './LinkedInImage'
+import EmailImage from './EmailImage'
+
 
 class Contact extends Component {
   render() {
-    var highlight = {
-      color: 'rgb(255, 50, 94)'
-    };
-
-    var size = {
-      height: '7em'
-    }
+    var highlight = { color: 'hotpink' };
 
     return (
       <div className="fill-page" id="contact">
         <div className="center-page">
           <div className="main black-background">
             <h1 className="black-background-text">LET'S GET <span style={highlight}>IN TOUCH</span></h1>
-            <h5>AND THANKS AGAIN FOR VISITING!</h5>
-            <a target="_blank" rel="noopener noreferrer" href="mailto:emily.yeh@students.olin.edu"><img src={email} style={size} alt="icon"/></a> &emsp; &emsp;
-            <a target="_blank" rel="noopener noreferrer" href="https://github.com/YehEmily"><img src={github} style={size} alt="icon"/></a> &emsp; &emsp;
-            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/yehemily/"><img src={linkedin} style={size} alt="icon"/></a>
+            <p className="margins">Thanks for visiting my website! If you have any questions, comments, or feedback, please reach out to me via any of the following links.</p>
+            
+            <a target="_blank" rel="noopener noreferrer" href="mailto:emily.yeh@students.olin.edu">
+            <EmailImage /></a> &emsp; &emsp;
+            
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/YehEmily">
+            <GithubImage /></a> &emsp; &emsp;
+            
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/yehemily/">
+            <LinkedInImage /></a>
 
-            <h5><a target="_blank" rel="noopener noreferrer" href="EmilyYeh.pdf">PS: YOU CAN DOWNLOAD MY RESUME HERE.</a></h5>
+            <p>You can also download my resum&eacute; <a target="_blank" rel="noopener noreferrer" href="EmilyYeh.pdf">here</a>.</p>
           </div>
         </div>
       </div>

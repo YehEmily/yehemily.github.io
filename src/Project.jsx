@@ -66,7 +66,7 @@ const Project = (props) => {
       <h1>{project.name}</h1>
       {whichproject}
       <p>{project.description}</p>
-      <Link to='/projects'>Back</Link>
+      <Link to='/my-past-work'>Back</Link>
     </div>
   )
 }

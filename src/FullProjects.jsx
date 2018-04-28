@@ -66,17 +66,22 @@ class FullProjects extends Component {
     var i;
     for (i = 1; i <= ProjectsAPI.howmany(); i++) {
       if (i === 1) {
-        projectscomponent.push(<h1>What I did last summer</h1>);
+        projectscomponent.push(<h1 key="summer1">LAST SUMMER</h1>);
+        projectscomponent.push(<h3 key="summer1time">MAY 2017 TO AUGUST 2017</h3>)
       }
       if (i === 2) {
-        projectscomponent.push(<h1>What I did as a sophomore</h1>);
+        projectscomponent.push(<hr key="hr1"/>);
+        projectscomponent.push(<h1 key="sophomore">SOPHOMORE YEAR</h1>);
+        projectscomponent.push(<h3 key="sophomoretime">SEPTEMBER 2016 TO MAY 2017</h3>);
       }
       if (i === 7) {
-        projectscomponent.push(<h1>What I did as a freshman</h1>);
+        projectscomponent.push(<hr key="hr2"/>);
+        projectscomponent.push(<h1 key="freshman">FRESHMAN YEAR</h1>);
+        projectscomponent.push(<h3 key="freshmantime">SEPTEMBER 2015 TO MAY 2016</h3>);
       }
 
       projectscomponent.push(<div key={projects[i-1].tag}>
-        <Link to={`/projects/${projects[i-1].tag}`}>{this.getProjectImage(projects[i-1].tag)}</Link>
+        <Link to={`/my-past-work/${projects[i-1].tag}`}>{this.getProjectImage(projects[i-1].tag)}</Link>
         </div>);
     }
     return projectscomponent;
