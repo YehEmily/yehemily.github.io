@@ -89,11 +89,11 @@ class FullProjects extends Component {
 
   render() {
     return (
-      <div>
+      <div className="animated fadeIn">
         {this.getProjectList()}
       </div>
       );
   }
 }
 
-export default FullProjects
+export default FullProjects;

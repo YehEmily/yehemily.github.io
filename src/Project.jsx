@@ -62,7 +62,7 @@ const Project = (props) => {
   }
 
   return (
-    <div>
+    <div className="animated fadeIn">
       <h1>{project.name}</h1>
       {whichproject}
       <p>{project.description}</p>

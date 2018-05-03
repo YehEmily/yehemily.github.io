@@ -6,10 +6,12 @@ import EmailImage from './EmailImage'
 
 
 class Contact extends Component {
+
   render() {
     var highlight = { color: 'hotpink' };
 
     return (
+      <div className="animated fadeIn">
       <div className="fill-page" id="contact">
         <div className="center-page">
           <div className="main black-background">
@@ -28,6 +30,7 @@ class Contact extends Component {
             <p>You can also download my resum&eacute; <a target="_blank" rel="noopener noreferrer" href="EmilyYeh.pdf">here</a>.</p>
           </div>
         </div>
+      </div>
       </div>
     )
   }
