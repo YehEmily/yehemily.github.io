@@ -20,8 +20,12 @@ import softdes from './images/softdes.png';
 
 const Project = (props) => {
   const project = ProjectsAPI.get(
-    parseInt(props.match.params.tag, 10)
+    (ProjectsAPI.howmany() - parseInt(props.match.params.tag, 10) - 1)
   )
+
+  console.log("Project : " + project.tag);
+  console.log("Should be : " + (ProjectsAPI.howmany() - parseInt(project.tag, 10) - 1));
+
   if (!project) {
     return <div>Sorry, but the project was not found.</div>
   }
@@ -42,45 +46,45 @@ const Project = (props) => {
 
   var whichproject;
   switch(project.tag) {
-    case 0:
+    case 12:
     whichproject = <img className="no-glow" src={ued} style={size20} alt="project cover" />;
     break;
-    case 1:
+    case 11:
     whichproject = <img className="no-glow" src={complexity} style={size20} alt="project cover" />;
     break;
-    case 2:
+    case 10:
     whichproject = <img className="no-glow" src={softsys1} style={size10} alt="project cover" />;
     break;
-    case 3:
+    case 9:
     whichproject = <img className="no-glow" src={softsys2} style={size10} alt="project cover" />;
     break;
-    case 4:
+    case 8:
     whichproject = <div><img className="no-glow" src={geode} style={size12} alt="project cover" /> &emsp; <img className="no-glow" src={gemfire} style={size12} alt="project cover" /></div>;
     break;
-    case 5:
+    case 7:
     whichproject = <img className="no-glow" src={calmmute} style={size10} alt="project cover" />;
     break;
     case 6:
     whichproject = <img className="no-glow" src={calendar} style={size10} alt="project cover" />;
     break;
-    case 7:
+    case 5:
     whichproject = <img className="no-glow" src={projects} style={size10} alt="project cover" />;
     break;
-    case 8:
+    case 4:
     whichproject = <img className="no-glow" src={poe} style={size10} alt="project cover" />;
     break;
-    case 9:
+    case 3:
     whichproject = <div><img className="no-glow" src={lights} style={size10} alt="project cover" /> &emsp; 
                         <img className="no-glow" src={scanner} style={size10} alt="project cover" /> &emsp; 
                         <img className="no-glow" src={robot} style={size10} alt="project cover" /></div>;
     break;
-    case 10:
+    case 2:
     whichproject = <img className="no-glow" src={olin} style={size20} alt="project cover" />;
     break;
-    case 11:
+    case 1:
     whichproject = <img className="no-glow" src={softdes} style={size20} alt="project cover" />;
     break;
-    case 12:
+    case 0:
     whichproject = <img className="no-glow" src={modsim} style={size20} alt="project cover" />;
     break;
     default:
