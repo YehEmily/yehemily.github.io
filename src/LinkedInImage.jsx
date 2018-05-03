@@ -24,7 +24,7 @@ class LinkedInImage extends Component {
   }
 
   render() {
-    var format = { height: '7em' };
+    var format = { width: '7em', maxWidth: '20%' };
     return (
         <img alt="linkedin" style={format} onMouseOver={this.handleMouseOver} onMouseOut={this.handleMouseOut} src={this.state.githubSrc}/>
     );
