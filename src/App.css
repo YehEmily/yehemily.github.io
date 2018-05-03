@@ -16,7 +16,6 @@ html {
 
 ::-webkit-scrollbar              { background-color: white; }
 ::-webkit-scrollbar-button       { display: none; }
-/*::-webkit-scrollbar-track        { background-color: hotpink; }*/
 ::-webkit-scrollbar-track-piece  { background-color: white; }
 ::-webkit-scrollbar-thumb        { background-color: hotpink; }
 
@@ -54,7 +53,7 @@ h1 img {
 
 hr {
     color: white;
-    height: 2em;
+    height: 4em;
     border: none;
 }
 
@@ -65,7 +64,6 @@ a {
     font-weight: bold;
     -webkit-transition-duration: 0.4s; /*For Safari users*/
     transition-duration: 0.4s;
-    text-shadow: 0 0 1em rgb(255, 255, 255);
 }
 
 a.paragraph {
@@ -88,7 +86,6 @@ button {
     transition-duration: 0.4s;
     outline: none;
     border: none;
-    text-shadow: 0 0 1em rgb(255, 255, 255);
 }
 
 /* Miscellaneous */
@@ -107,7 +104,6 @@ div.main {
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 2em;
-    /*line-height: 0.9em;*/
     border: 0.1em solid white;
 }
 
@@ -117,12 +113,10 @@ div.bio {
     margin-left: 10%;
     padding-bottom: 2em;
     padding-top: 5em;
-    /*line-height: 0;*/
     border: 0.1em solid white;
 }
 
 div.fill-page {
-    /*position: relative;*/
     min-height: 100vh;
     padding: 0;
     margin: 0;
@@ -147,23 +141,17 @@ div.center-page {
 }
 
 div.just-for-projects {
-    padding: 10%;
+    padding-top: 5em;
     vertical-align: center;
     text-align: center;
 }
 
-.margin-top {
-    padding: 10%;
+div.just-for-full-projects {
+    padding-bottom: 10em;
 }
 
-div.fill-page-with-solid-black-background {
-    position: relative;
-    min-height: 100vh;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    clear:both;
-    background-color: rgba(0, 0, 0, 0.5);
+.margin-top {
+    padding: 10%;
 }
 
 .opaque-background {
@@ -207,72 +195,115 @@ div.fill-page-with-solid-black-background {
     transition: 0.5s;
 }
 
+.projects-page {
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    padding-top: none;
+    padding-bottom: none;
+}
+
 img:hover {
     transition: 0.5s;
-    -webkit-filter: drop-shadow(0 0 0.5em white); /* Safari 6.0 - 9.0 */
-    filter: drop-shadow(0 0 0.5em white);
+    -webkit-filter: drop-shadow(0 0 0.5em hotpink); /* Safari 6.0 - 9.0 */
+    filter: drop-shadow(0 0 0.5em hotpink);
 }
 
-img.more-glow:hover {
-    -webkit-filter: drop-shadow(0 0 2em white); /* Safari 6.0 - 9.0 */
-    filter: drop-shadow(0 0 2em white);
+img.no-glow:hover {
+    filter: none;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+img.animate:hover {
+    animation-name: jello;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes jello {
+  from,
+  11.1%,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
-  100% {
-    opacity: 1;
+  22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77.7% {
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88.8% {
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
   }
 }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
+@keyframes jello {
+  from,
+  11.1%,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes fadeInRight {
-  0% {
-    opacity: 0;
-    transform: translate3d(100%, 0, 0);
+  22.2% {
+    -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+    transform: skewX(-12.5deg) skewY(-12.5deg);
   }
 
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-.m-scene {
-  /** Basic styles for an animated element */
-  .scene_element {
-    animation-duration: 0.25s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
-
+  33.3% {
+    -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+    transform: skewX(6.25deg) skewY(6.25deg);
   }
 
-  /** An element that fades in */
-  .scene_element--fadein {
-    animation-name: fadeIn;
+  44.4% {
+    -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+    transform: skewX(-3.125deg) skewY(-3.125deg);
   }
 
-  /** An element that fades in and slides up */
-  .scene_element--fadeinup {
-    animation-name: fadeInUp;
+  55.5% {
+    -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+    transform: skewX(1.5625deg) skewY(1.5625deg);
   }
 
-  /** An element that fades in and slides from the right */
-  .scene_element--fadeinright {
-    animation-name: fadeInRight;
+  66.6% {
+    -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+
+  77.7% {
+    -webkit-transform: skewX(0.390625deg) skewY(0.390625deg);
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+
+  88.8% {
+    -webkit-transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
   }
 }

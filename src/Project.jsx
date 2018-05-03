@@ -1,6 +1,10 @@
 import React from 'react'
 import ProjectsAPI from './api'
 import { Link } from 'react-router-dom'
+import ued from './images/ued.png';
+import softsys1 from './images/wumpus.png';
+import softsys2 from './images/chatroom.png';
+import complexity from './images/complexity2.png';
 import geode from './images/geode-logo.png';
 import gemfire from './images/gemfire.png';
 import poe from './images/marionette.jpg';
@@ -24,49 +28,71 @@ const Project = (props) => {
 
   var size6 = { height: '6em' };
   var size10 = { height: '10em' };
-  var width10 = { width: '10em' };
+  var size20 = {height: '20em'};
+
+  var arrowStyle = {
+    fontWeight: 'bold',
+    fontSize: '2em'
+  }
+
+  var fontStyle = {
+    fontWeight: 'normal',
+    fontSize: '1.5em'
+  }
 
   var whichproject;
   switch(project.tag) {
+    case 0:
+    whichproject = <img className="no-glow" src={ued} style={size20} alt="project cover" />;
+    break;
     case 1:
-    whichproject = <div><img src={geode} style={size6} alt="project cover" /> &emsp; <img src={gemfire} style={size6} alt="project cover" /></div>;
+    whichproject = <img className="no-glow" src={complexity} style={size20} alt="project cover" />;
     break;
     case 2:
-    whichproject = <img src={calmmute} style={size10} alt="project cover" />;
+    whichproject = <img className="no-glow" src={softsys1} style={size10} alt="project cover" />;
     break;
     case 3:
-    whichproject = <img src={calendar} style={size10} alt="project cover" />;
+    whichproject = <img className="no-glow" src={softsys2} style={size10} alt="project cover" />;
     break;
     case 4:
-    whichproject = <img src={projects} style={size10} alt="project cover" />;
+    whichproject = <div><img className="no-glow" src={geode} style={size6} alt="project cover" /> &emsp; <img className="no-glow" src={gemfire} style={size6} alt="project cover" /></div>;
     break;
     case 5:
-    whichproject = <img src={poe} style={size10} alt="project cover" />;
+    whichproject = <img className="no-glow" src={calmmute} style={size10} alt="project cover" />;
     break;
     case 6:
-    whichproject = <div><img src={lights} style={size10} alt="project cover" /> &emsp; 
-                        <img src={scanner} style={size10} alt="project cover" /> &emsp; 
-                        <img src={robot} style={size10} alt="project cover" /></div>;
+    whichproject = <img className="no-glow" src={calendar} style={size10} alt="project cover" />;
     break;
     case 7:
-    whichproject = <img src={olin} style={width10} alt="project cover" />;
+    whichproject = <img className="no-glow" src={projects} style={size10} alt="project cover" />;
     break;
     case 8:
-    whichproject = <img src={modsim} style={size10} alt="project cover" />;
+    whichproject = <img className="no-glow" src={poe} style={size10} alt="project cover" />;
     break;
     case 9:
-    whichproject = <img src={softdes} style={size10} alt="project cover" />;
+    whichproject = <div><img className="no-glow" src={lights} style={size10} alt="project cover" /> &emsp; 
+                        <img className="no-glow" src={scanner} style={size10} alt="project cover" /> &emsp; 
+                        <img className="no-glow" src={robot} style={size10} alt="project cover" /></div>;
+    break;
+    case 10:
+    whichproject = <img className="no-glow" src={olin} style={size10} alt="project cover" />;
+    break;
+    case 11:
+    whichproject = <img className="no-glow" src={softdes} style={size10} alt="project cover" />;
+    break;
+    case 12:
+    whichproject = <img className="no-glow" src={modsim} style={size20} alt="project cover" />;
     break;
     default:
     whichproject = <p>Sorry, this project could not be found.</p>
   }
 
   return (
-    <div className="animated fadeIn">
-      <h1>{project.name}</h1>
-      {whichproject}
-      <p>{project.description}</p>
-      <Link to='/my-past-work'>Back</Link>
+    <div className="animated fadeIn margins justified-text just-for-full-projects">
+      <center><h1>{project.name}</h1></center>
+      <center>{whichproject}</center>
+      {project.description}
+      <center><Link to='/my-past-work'><span style={arrowStyle}>&#171;</span> <span style={fontStyle}>Go back</span></Link></center>
     </div>
   )
 }

@@ -13,7 +13,7 @@ class ArtProjects extends Component {
 		          <div className="center-page">
 		            <div className="main opaque-background">
 		              <h1>I LIKE TO <span style={highlight}>DRAW</span></h1>
-		              <p>(will fill this page in later)</p>
+		              <p>(will fill this page in later..........i promise)</p>
 		            </div>
 		          </div>
 		        </div>
