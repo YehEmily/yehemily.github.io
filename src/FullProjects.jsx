@@ -23,7 +23,7 @@ import complexity from './images/complexity2-thumb.png';
 class FullProjects extends Component {
   getProjectImage(tag) {
     var whichproject;
-    var size10 = { height: '10em' };
+    var size10 = { width: '10em', maxWidth: '20%' };
 
     switch(tag) {
       case 0:

@@ -26,9 +26,9 @@ const Project = (props) => {
     return <div>Sorry, but the project was not found.</div>
   }
 
-  var size6 = { height: '6em' };
-  var size10 = { height: '10em' };
-  var size20 = {height: '20em'};
+  var size12 = { width: '12em', maxWidth: '50%' };
+  var size10 = { width: '20em', maxWidth: '30%' };
+  var size20 = { width: '50em', maxWidth: '100%' };
 
   var arrowStyle = {
     fontWeight: 'bold',
@@ -55,7 +55,7 @@ const Project = (props) => {
     whichproject = <img className="no-glow" src={softsys2} style={size10} alt="project cover" />;
     break;
     case 4:
-    whichproject = <div><img className="no-glow" src={geode} style={size6} alt="project cover" /> &emsp; <img className="no-glow" src={gemfire} style={size6} alt="project cover" /></div>;
+    whichproject = <div><img className="no-glow" src={geode} style={size12} alt="project cover" /> &emsp; <img className="no-glow" src={gemfire} style={size12} alt="project cover" /></div>;
     break;
     case 5:
     whichproject = <img className="no-glow" src={calmmute} style={size10} alt="project cover" />;
@@ -75,10 +75,10 @@ const Project = (props) => {
                         <img className="no-glow" src={robot} style={size10} alt="project cover" /></div>;
     break;
     case 10:
-    whichproject = <img className="no-glow" src={olin} style={size10} alt="project cover" />;
+    whichproject = <img className="no-glow" src={olin} style={size20} alt="project cover" />;
     break;
     case 11:
-    whichproject = <img className="no-glow" src={softdes} style={size10} alt="project cover" />;
+    whichproject = <img className="no-glow" src={softdes} style={size20} alt="project cover" />;
     break;
     case 12:
     whichproject = <img className="no-glow" src={modsim} style={size20} alt="project cover" />;
