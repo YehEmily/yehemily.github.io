@@ -34,8 +34,34 @@ h3 {
     font-size: 1.3em;
 }
 
-a, p, button {
+a, p {
     font-size: 1.1em;
+}
+
+button {
+    font-size: 0.9em;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background-color: #1e1e1e;
+    width: 5em;
+    height: 5em;
+    padding: 0.3em;
+    border-radius: 50%;
+    border: 0.1em solid darkgray;
+    transition-duration: 0.5s;
+}
+
+button:hover {
+    background-color: #fdca3b;
+    color: #282828;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
 }
 
 /*************************************************/
@@ -65,7 +91,7 @@ div.center-page {
 /*************************************************/
 
 div.home-container {
-    width: 39em;
+    width: 39.5em;
     display: inline-block;
     margin: none;
     visibility: visible;
@@ -73,7 +99,17 @@ div.home-container {
 
 div.home-floated {
     float: left;
-    width: 18.5em;
+    width: 19em;
 }
 
 /*************************************************/
+
+#menu {
+    position:fixed;
+    top: 0em;
+    width: 100%;
+    background: none;
+    z-index: 9999;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
