@@ -1,0 +1,83 @@
+/*************************************************/
+
+html {
+	background-color: #282828;
+}
+
+body {
+	margin: 0;
+}
+
+/*************************************************/
+
+p, h1, h2, h3 {
+    color: white;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 6em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+/*************************************************/
+
+div.fill-page {
+    position: relative;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    clear: both;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+div.center-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    ms-transform: translate(-50%, -50%);
+    display: block;
+}
+
+/*************************************************/
+
+div.home-container {
+    width: 39em;
+    display: inline-block;
+    margin: none;
+}
+
+div.home-floated {
+    float: left;
+    width: 18em;
+}
+
+/*************************************************/
+#menu {
+    position:fixed;
+    top: 0em;
+    width: 100%;
+    background-image: linear-gradient(white, rgba(255, 255, 255, 0));
+    z-index: 9999;
+    padding-left: 1%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
