@@ -46,6 +46,12 @@ button {
 
 a {
     text-decoration: none;
+    outline: none;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    color: #fdca3b;
 }
 
 button {
@@ -54,6 +60,7 @@ button {
     border: none;
     transition-duration: 0.5s;
     font-weight: bold;
+    outline: none;
 }
 
 button:hover {
@@ -71,7 +78,6 @@ div.fill-page {
     margin: 0;
     clear: both;
     text-align: center;
-    visibility: hidden;
 }
 
 div.center-page {
@@ -96,6 +102,14 @@ div.home-container {
 div.home-floated {
     float: left;
     width: 19em;
+}
+
+div.about-container {
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    text-align: center;
 }
 
 /*************************************************/
