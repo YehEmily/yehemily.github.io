@@ -2,10 +2,12 @@
 
 html {
 	background-color: #282828;
+    width: 100%;
+    margin: 0;
 }
 
 body {
-	margin: 0;
+    margin: 0;
 }
 
 /*************************************************/
@@ -48,34 +50,27 @@ a {
 
 button {
     background-color: transparent;
-    width: 5em;
-    height: 5em;
     padding: none;
-    border-radius: 50%;
     border: none;
     transition-duration: 0.5s;
     font-weight: bold;
 }
 
 button:hover {
-    background-color: #fdca3b;
-    color: #282828;
-    font-weight: bold;
+    color: #fdca3b;
     cursor: pointer;
-    border: none;
 }
 
 /*************************************************/
 
 div.fill-page {
+    width: 100%;
     position: relative;
     min-height: 100vh;
     padding: 0;
     margin: 0;
     clear: both;
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
     visibility: hidden;
 }
 
@@ -106,7 +101,7 @@ div.home-floated {
 /*************************************************/
 
 #menu {
-    position:fixed;
+    position: fixed;
     top: 0em;
     width: 100%;
     background: none;
