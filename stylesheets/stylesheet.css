@@ -40,10 +40,6 @@ a, p {
     font-size: 1.1em;
 }
 
-button {
-    font-size: 0.9em;
-}
-
 a {
     text-decoration: none;
     outline: none;
@@ -112,6 +108,12 @@ div.about-container {
     text-align: center;
 }
 
+div.about-image-floated {
+    float: left;
+    padding-right: 2em;
+    height: 100vh;
+}
+
 /*************************************************/
 
 #menu {
@@ -119,8 +121,12 @@ div.about-container {
     top: 0em;
     width: 100%;
     background-color: #282828;
-    /*background-image: linear-gradient(#282828, rgba(0, 0, 0, 0));*/
     z-index: 9999;
     padding-top: 1em;
     padding-bottom: 1em;
 }
+
+::-webkit-scrollbar              { background-color: #282828; }
+::-webkit-scrollbar-button       { display: none; }
+::-webkit-scrollbar-track-piece  { background-color: #282828; }
+::-webkit-scrollbar-thumb        { background-color: #fdca3b; }
