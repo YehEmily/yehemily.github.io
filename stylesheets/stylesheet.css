@@ -3,6 +3,7 @@
 html {
 	background-color: #282828;
     width: 100%;
+    height: 100%;
     margin: 0;
 }
 
@@ -124,6 +125,12 @@ div.about-image-floated {
     z-index: 9999;
     padding-top: 1em;
     padding-bottom: 1em;
+}
+
+@media (max-width: 600px) {
+    #optional {
+        display: none;
+    }
 }
 
 ::-webkit-scrollbar              { background-color: #282828; }
