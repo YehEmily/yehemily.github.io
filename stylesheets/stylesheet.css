@@ -140,9 +140,9 @@ div.portfolio-internal-container {
     border-bottom: 1px solid #fdca3b;
 }
 
-::-webkit-scrollbar              { background-color: #282828; }
+::-webkit-scrollbar              { background-color: #917831; }
 ::-webkit-scrollbar-button       { display: none; }
-::-webkit-scrollbar-track-piece  { background-color: #282828; }
+::-webkit-scrollbar-track-piece  { background-color: #917831; }
 ::-webkit-scrollbar-thumb        { background-color: #fdca3b; }
 
 hr {
