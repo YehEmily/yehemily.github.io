@@ -114,6 +114,14 @@ div.page-container {
     text-align: center;
 }
 
+div.portfolio {
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+    width: 70em;
+}
+
 div.portfolio-container {
     width: 30em;
     height: 20em;
