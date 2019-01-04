@@ -100,7 +100,7 @@ div.center-page {
 /*************************************************/
 
 div.home-container {
-    width: 39.5em;
+    width: 40.5em;
     display: inline-block;
     margin: none;
     visibility: visible;
@@ -108,7 +108,7 @@ div.home-container {
 
 div.home-floated {
     float: left;
-    width: 19em;
+    width: 20em;
 }
 
 div.page-container {
