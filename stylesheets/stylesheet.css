@@ -38,12 +38,16 @@ h2.portfolio {
     font-size: 3em;
 }
 
-h3 {
+h3, button {
     font-size: 1.3em;
 }
 
 p, nav {
     font-size: 1.1em;
+}
+
+button {
+    color: #282828;
 }
 
 a {
@@ -57,16 +61,17 @@ a:hover {
 }
 
 button {
-    background-color: transparent;
-    padding: none;
+    background-color: #fdca3b;
+    padding: 1em;
     border: none;
     transition-duration: 0.5s;
     font-weight: bold;
     outline: none;
+    border-radius: 1em;
+    width: 8em;
 }
 
 button:hover {
-    color: #fdca3b;
     cursor: pointer;
 }
 
@@ -133,6 +138,39 @@ div.portfolio-internal-container {
     width: 100%;
     height: 15em;
     padding-bottom: 1em;
+    position: relative;
+}
+
+.portfolio-image {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 15em;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(40, 40, 40, 0.8);
+}
+
+.portfolio-internal-container:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 /*************************************************/
