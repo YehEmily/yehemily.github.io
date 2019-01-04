@@ -107,7 +107,7 @@ div.home-floated {
 }
 
 div.page-container {
-    margin-top: 10em;
+    margin-top: 150px;
     margin-left: 15%;
     margin-right: 15%;
     margin-bottom: 5%;
@@ -116,7 +116,7 @@ div.page-container {
 
 div.portfolio {
     margin: 0 auto;
-    margin-top: 10em;
+    margin-top: 150px;
     margin-bottom: 5%;
     text-align: center;
     width: 70em;
