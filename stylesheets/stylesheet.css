@@ -118,6 +118,14 @@ div.about-container {
     visibility: visible;
 }
 
+div.about-text-container {
+    width: 43em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
 div.about-floated {
     float: left;
     width: 22em;
