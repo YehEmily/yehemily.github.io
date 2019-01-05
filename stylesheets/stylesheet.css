@@ -111,6 +111,18 @@ div.home-floated {
     width: 20em;
 }
 
+div.about-container {
+    width: 43em;
+    display: inline-block;
+    margin: none;
+    visibility: visible;
+}
+
+div.about-floated {
+    float: left;
+    width: 22em;
+}
+
 div.page-container {
     margin-top: 150px;
     margin-left: 15%;
@@ -255,4 +267,13 @@ div.portfolio-internal-container {
 hr {
     margin: 2em;
     border: none;
+}
+
+img.about-logos {
+    border-radius: 50%;
+}
+
+img.about-logos:hover {
+    background-color: #fdca3b;
+    transition: 0.5s;
 }
