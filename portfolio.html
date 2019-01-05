@@ -36,6 +36,23 @@
 		<div class="modal-overflow-hiders"></div>
 	</div>
 
+	<div id="pivotalModal" class="modal">
+		<div class="modal-overflow-hiders"><span class="close">&times;</span></div>
+		<div class="modal-content">
+			<center>
+				<div class="portfolio-internal-container">
+					<img class="portfolio-image" src="images/portfolio_thumbnails/internal-modal-images/pivotal.jpg" style="object-fit:cover; height: 100%; width: 100%; float: left" />
+				</div>
+				<h1>Interning at <span style="color: #fdca3b">Pivotal</span></h1>
+			</center><br/>
+			<p>
+			<em>Pivotal Software, Inc. is a software and services company which has divisions that perform consulting services (Pivotal Labs), work on cloud computing (Pivotal Cloud Foundry), and develop other big data products. One of these products is Pivotal GemFire, which is an in-memory distributed data grid for high-scale custom applications. GemFire is powered by Apache Geode, which is an open-source data management platform that provides real-time, consistent access to data-intensive applications throughout widely distributed cloud architectures.</em><br/><br/>
+
+			</p>
+		</div>
+		<div class="modal-overflow-hiders"></div>
+	</div>
+
 	<div class="portfolio">
 		<h1>my <span style="color: #fdca3b">portfolio</span></h1><br/>
 
@@ -65,7 +82,7 @@
 				<img class="portfolio-image" src="images/portfolio_thumbnails/pivotal.png" style="object-fit:cover; height: 100%; width: 100%; float: left" />
 				<div class="overlay">
 					<div class="text">
-						<button>tell me more</button>
+						<button id="pivotalBtn">tell me more</button>
 					</div>
 				</div>
 			</div>
@@ -196,27 +213,43 @@
 	</div>
 
 <script>
-	var modal = document.getElementById('audibleModal');
+	var audibleModal = document.getElementById('audibleModal');
+	var audibleBtn = document.getElementById("audibleBtn");
+	var audibleSpan = document.getElementsByClassName("close")[0];
 
-	var btn = document.getElementById("audibleBtn");
+	var pivotalModal = document.getElementById('pivotalModal');
+	var pivotalBtn = document.getElementById("pivotalBtn");
+	var pivotalSpan = document.getElementsByClassName("close")[1];
 
-	var span = document.getElementsByClassName("close")[0];
-
-	btn.onclick = function() {
-	  	modal.style.display = "block";
+	audibleBtn.onclick = function() {
+	  	audibleModal.style.display = "block";
 	  	document.body.style.overflow = "hidden";
 	}
 
-	span.onclick = function() {
-	  	modal.style.display = "none";
+	audibleSpan.onclick = function() {
+	  	audibleModal.style.display = "none";
+	  	document.body.style.overflow = "auto";
+	}
+
+	pivotalBtn.onclick = function() {
+	  	pivotalModal.style.display = "block";
+	  	document.body.style.overflow = "hidden";
+	}
+
+	pivotalSpan.onclick = function() {
+	  	pivotalModal.style.display = "none";
 	  	document.body.style.overflow = "auto";
 	}
 
 	window.onclick = function(event) {
-		if (event.target == modal) {
-			modal.style.display = "none";
+		if (event.target == audibleModal) {
+			audibleModal.style.display = "none";
+			document.body.style.overflow = "auto";
+		} else if (event.target == pivotalModal) {
+			pivotalModal.style.display = "none";
 			document.body.style.overflow = "auto";
 		}
+
 	}
 </script>
 	
