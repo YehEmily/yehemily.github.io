@@ -135,14 +135,19 @@
 		<div class="modal-content">
 			<center>
 			<div class="portfolio-internal-container">
-				<img class="portfolio-image" src="images/portfolio_thumbnails/internal-modal-images/softsys.png" style="object-fit:cover; height: 100%; width: 100%; float: left" />
+				<img class="portfolio-image" src="images/portfolio_thumbnails/internal-modal-images/ai.png" style="object-fit:cover; height: 100%; width: 100%; float: left" />
 			</div>
 			<h1>Independent Study<br/>
 				<span style="color: #fdca3b">Artificial Intelligence</span></h1>
 			</center><br/>
 			<p>
-				
+				During the spring semester of my sophomore year, I studied artificial intelligence independently with Oliver Steele as my advisor. One of my main objectives with this project was to maintain and improve my ability to use Java to solve problems, as at this point, I had not yet used Java in many technical projects. Another main objective was to learn how different AIs work and how to implement them algorithmically, as well as how to do so using Java.<br/><br/>
 
+				My intention with this project was to create an entertaining game that is comprised of several different games. These other games included Go Fish, Battleship, and Tic-Tac-Toe. The overarching game is a Tamagotchi-styled game, in which the player must take care of an "Oliner" pet by playing games with it. Unlike Tamagotchis, though, the "Oliner" has a mind of its own and can intelligently keep up with the player in each game.<br/><br/>
+
+				The AI for Go Fish is mostly hard-coded; the AI for Battleship makes use of a gradient map to determine where on the map a battleship is more likely to be located; and the AI for Tic-Tac-Toe uses the minimax algorithm and a generated game tree to produce its subsequent moves. I built a user interface for this project using Swing.<br/><br/>
+
+				The source code for this project is publicly available. <a target="_blank" href="https://github.com/YehEmily/OSSGame" style="font-weight: bold;">If you're curious, you can take a look at it on GitHub here</a>.
 			</p>
 		</div>
 		<div class="modal-overflow-hiders"></div>
@@ -153,14 +158,37 @@
 		<div class="modal-content">
 			<center>
 			<div class="portfolio-internal-container">
-				<img class="portfolio-image" src="images/portfolio_thumbnails/internal-modal-images/softsys.png" style="object-fit:cover; height: 100%; width: 100%; float: left" />
+				<img class="portfolio-image" src="images/portfolio_thumbnails/internal-modal-images/htl.png" style="object-fit:cover; height: 100%; width: 100%; float: left" />
 			</div>
 			<h1>Hacking the Library<br/>
-				<span style="color: #fdca3b">WebApps</span></h1>
+				<span style="color: #fdca3b">Webapps</span></h1>
 			</center><br/>
-			<p>
+			<p><em>Hacking the Library is a course that leverages the Olin Library and the areas of civic and community software as platforms on which to explore topics in software production, deployment, and operations. This is a studio course, with workshops, readings, and discussion around production development and operations as well as libraries. Topics are guided by the specific projects chosen. Projects are developed by individuals and teams and regular design reviews will help shape all dimensions of the projects so they may attain a maturity surpassing traditional software coursework.</em><br/><br/>
 				
+			In this unique course, I worked on three different webapps. The first webapp was a community calendar, the second webapp was a meditative space supplement, and the third webapp was a projects archive.<br/><br/>
 
+			<a target="_blank" href="http://olincalendar.herokuapp.com/"><span style="font-size: larger; font-weight: bold;">1. The Olin Community Calendar</span></a><br/>
+			The Olin Community Calendar was inspired by the fact that currently, email is the primary way for students to find out about events that have happened, are happening, or will happen on Olin's campus. For this project, I worked with another student to explore an alternative method of event storage and display. We came up with a community calendar, in which events are arranged by date and can be accessed and edited by the community.<br/><br/>
+
+			The webapp itself is built with Flask, JavaScript, and HTML/CSS. There is a server that acts as the skeleton of the website, some static resources (including backgrounds and CSS), and several HTML templates that display data and other information to the user. Data are passed from HTML templates to the server via HTML form inputs. The Flask backend receives this information as a dictionary request form, and parses it to retrieve relevant information. Data is passed back into the HTML frontend via Flask. The events on the calendar are stored in a postgreSQL server provided by Heroku. Finally, psycopg2 is used as a connector between the Python code and the database.<br/><br/>
+
+			The source code for this project is publicly available. <a target="_blank" href="https://github.com/leonjunwei/htl-calendar" style="font-weight: bold;">If you're curious, you can take a look at it on GitHub here</a>. In addition, the webapp is still hosted on Heroku and can be viewed <a target="_blank" href="http://olincalendar.herokuapp.com/" style="font-weight: bold;">here.</a><br/><br/>
+
+			<a target="_blank" href="http://calmmute.herokuapp.com/"><span style="font-size: larger; font-weight: bold;">2. Calmmute</span></a><br/>
+			Calmmute, a project that I worked on with a partner, is inspired by the idea that commutes are cognitively important: having time between engagements allows our brains to finish processing the last thing we did before they begin working on the next. My partner and I noticed that people at Olin often either schedule meetings back to back, or use their awkward time between meetings to do more work. Both of these scenarios remove the precious commute time that can allow for stress relief and mental refreshment. As a result, we spun up Calmmute, an application that pairs simple, quick yoga exercises with time management to allow people to use their commute time more effectively.<br/><br/>
+
+			Calmmute is built with Flask, JavaScript, and HTML/CSS. It uses a Python backend engine that takes user input to determine the type of yoga pose to display on its main page, then randomly selects an appropriate yoga pose. The main page displays the pose's instructions, as well as an instructional video.<br/><br/>
+
+			The source code for this project is publicly available. <a target="_blank" href="https://github.com/YehEmily/calmmute" style="font-weight: bold;">If you're curious, you can take a look at it on GitHub here</a>. In addition, the webapp is still hosted on Heroku and can be viewed <a target="_blank" href="http://calmmute.herokuapp.com/" style="font-weight: bold;">here.</a><br/><br/>
+
+			<a target="_blank" href="https://github.com/MatthewBeaudouinLafon/Project-Projects/"><span style="font-size: larger; font-weight: bold;">3. Project: Projects</span></a><br/>
+			I worked with a partner to survey students at Olin regarding how they handle recording all of the projects that they work on during their time in college. We found that 45 students at Olin (a whole 12.8% of the student body) confessed that recording projects is something of an ordeal. Some respondents created their own websites and portfolios, while about a third said that they had not created any kind of professional project portfolio or archive yet. In addition, about half of the respondents reported that they update their websites, portfolios, or PDFs only when job season is imminent. This all seemed to be a strong sign that the experience of recording projects at Olin has room for improvement. All of this feedback was gathered to form the basis for the creation of this project.<br/><br/>
+
+			Project: Projects aims to make the lives of students easier by facilitating the creation of portfolios and lowering the activation energy for recording projects. It also aims to make the lives of faculty easier by placing all student projects in one convenient location. The frontend of the application is built using React, and the backend is built using Python and a MongoDB database.<br/><br/>
+
+			At the end of the semester and the time of the final project freeze, my partner and I had created a webapp that allowed students to log on, search for their projects or other people's projects, and record new projects.<br/><br/>
+
+			The source code for this project is publicly available. <a target="_blank" href="https://github.com/MatthewBeaudouinLafon/Project-Projects/" style="font-weight: bold;">If you're curious, you can take a look at it on GitHub here</a>.
 			</p>
 		</div>
 		<div class="modal-overflow-hiders"></div>
@@ -305,7 +333,7 @@
 					</div>
 				</div>
 			</div>
-			<h3><b>Hacking the Library Apps</b></h3>
+			<h3><b>Hacking the Library Webapps</b></h3>
 			<p><span style="color: darkgray">Spring 2017</span></p>
 		</div>
 
