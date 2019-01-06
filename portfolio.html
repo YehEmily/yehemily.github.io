@@ -110,14 +110,18 @@
 		<div class="modal-content">
 			<center>
 			<div class="portfolio-internal-container">
-				<img class="portfolio-image" src="images/portfolio_thumbnails/internal-modal-images/softsys.png" style="object-fit:cover; height: 100%; width: 100%; float: left" />
+				<img class="portfolio-image" src="images/portfolio_thumbnails/internal-modal-images/complexity.png" style="object-fit:cover; height: 100%; width: 100%; float: left" />
 			</div>
 			<h1>Complexity Science<br/>
 				<span style="color: #fdca3b">Modeling Crime Networks</span></h1>
 			</center><br/>
-			<p>
+			<p><em>Complexity Science is a course taught by Dr. Allen Downey at Olin College of Engineering. It involves the study of complex systems and represents a new approach to science that investigates how relationships between parts give rise to the collective behaviors of a system and how the system interacts and forms relationships with its environment. Topics covered in this course include the structure and dynamics of complex networks; cellular automata, self-organized criticality, and generative systems; fitness landscape models of biological and technological evolution; and agent-based models of social and economic behavior.</em><br/><br/>
 				
+			During the fall semester of my junior year of college, I worked with another student to implement an agent-based model of a crime network based on a research paper that we studied. In our model, the agents are called Citizens and they inhabit a graph-like world called CrimeWorld, where each node is a street intersection. Each Citizen has several behaviors: they spend approximately 8 hours (the length of a work day) of their day moving around randomly in CrimeWorld, after which they return to their designated home and "sleep." They move randomly in one of the four cardinal directions for each time step. They can have two different roles: some Citizens are offenders (agents who commit crimes) and some are police (agents who prevent crimes). The offender agents share sets of characteristics, and for each time step, these characteristics help to determine whether they commit a crime or not.<br/><br/>
 
+			After completing our initial model, my partner and I were interested in investigating what would happen if we added another factor that had not been present in our first model: the punishment of criminals who are caught. We therefore introduced a motivation characteristic for criminal agents and observe the results in our model.<br/><br/>
+
+			The source code for this project is publicly available. <a target="_blank" href="https://github.com/ericasaywhat/SmoothCriminals" style="font-weight: bold;">If you're curious, you can take a look at it on GitHub here</a>.
 			</p>
 		</div>
 		<div class="modal-overflow-hiders"></div>
