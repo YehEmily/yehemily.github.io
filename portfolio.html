@@ -166,37 +166,24 @@
 		<div class="modal-overflow-hiders"></div>
 	</div>
 
-	<div id="snakeModal" class="modal">
-		<div class="modal-overflow-hiders"><span class="close">&times;</span></div>
-		<div class="modal-content">
-			<center>
-			<div class="portfolio-internal-container">
-				<img class="portfolio-image" src="images/portfolio_thumbnails/internal-modal-images/softsys.png" style="object-fit:cover; height: 100%; width: 100%; float: left" />
-			</div>
-			<h1>Data Structures<br/>
-				<span style="color: #fdca3b">Snake</span></h1>
-			</center><br/>
-			<p>
-				
-
-			</p>
-		</div>
-		<div class="modal-overflow-hiders"></div>
-	</div>
-
 	<div id="softdesModal" class="modal">
 		<div class="modal-overflow-hiders"><span class="close">&times;</span></div>
 		<div class="modal-content">
 			<center>
 			<div class="portfolio-internal-container">
-				<img class="portfolio-image" src="images/portfolio_thumbnails/internal-modal-images/softsys.png" style="object-fit:cover; height: 100%; width: 100%; float: left" />
+				<img class="portfolio-image" src="images/portfolio_thumbnails/softdes.gif" style="object-fit:cover; height: 100%; width: 100%; float: left" />
 			</div>
 			<h1>Software Design<br/>
-				<span style="color: #fdca3b">Harry Potter Simulator</span></h1>
+				<span style="color: #fdca3b">Harry Potter AR Game</span></h1>
 			</center><br/>
 			<p>
-				
+				<em>Software Design is an introductory course that focuses on a model of computation as a set of simultaneous ongoing entities embedded in and interacting with a dynamic environment, for example: computation as it occurs in spreadsheets, video games, web applications, and robots. Throughout this course, students learn how to use Python to create games and tools through laboratory assignments, frequent homework assignments, and team projects.</em><br/><br/>
 
+				During the spring semester of my freshman year of college, I worked with another student to create an augmented reality game based on Harry Potter. In this game, the player battles against Voldemort and his army of villains. Voldemort and other villains cast a number of spells, which inflict damage on the player. The player can return fire by waving their own wand in certain patterns, thereby casting spells.<br/><br/>
+
+				This game was implemented in Python using a model-view-controller design pattern. We used OpenCV for the computer vision portion of the project, pygame for displaying the elements of the game, and various other libraries for implementing the rest of the game.<br/><br/>
+
+				The source code for this project is publicly available. <a target="_blank" href="https://github.com/Oktober13/FinalProject" style="font-weight: bold;">If you're curious, you can take a look at it on GitHub here</a>.
 			</p>
 		</div>
 		<div class="modal-overflow-hiders"></div>
@@ -322,19 +309,6 @@
 			<p><span style="color: darkgray">Spring 2017</span></p>
 		</div>
 
-		<div class="portfolio-container">
-			<div class="portfolio-internal-container">
-				<img class="portfolio-image" src="images/portfolio_thumbnails/snake.png" style="object-fit:cover; height: 100%; width: 100%; float: left" />
-				<div class="overlay">
-					<div class="text">
-						<button id="snakeBtn">tell me more</button>
-					</div>
-				</div>
-			</div>
-			<h3><b>Java Snake</b></h3>
-			<p><span style="color: darkgray">Fall 2016</span></p>
-		</div>
-
 		<hr/> <!-- ------------------------------------------ -->
 
 		<h2 class="portfolio">projects - freshman year</h2>
@@ -383,13 +357,9 @@
 	var htlBtn = document.getElementById("htlBtn");
 	var htlSpan = document.getElementsByClassName("close")[6];
 
-	var snakeModal = document.getElementById('snakeModal');
-	var snakeBtn = document.getElementById("snakeBtn");
-	var snakeSpan = document.getElementsByClassName("close")[7];
-
 	var softdesModal = document.getElementById('softdesModal');
 	var softdesBtn = document.getElementById("softdesBtn");
-	var softdesSpan = document.getElementsByClassName("close")[8];
+	var softdesSpan = document.getElementsByClassName("close")[7];
 
 	audibleBtn.onclick = function() {
 	  	audibleModal.style.display = "block";
@@ -454,15 +424,6 @@
 	  	document.body.style.overflow = "auto";
 	}
 
-	snakeBtn.onclick = function() {
-	  	snakeModal.style.display = "block";
-	  	document.body.style.overflow = "hidden";
-	}
-	snakeSpan.onclick = function() {
-	  	snakeModal.style.display = "none";
-	  	document.body.style.overflow = "auto";
-	}
-
 	softdesBtn.onclick = function() {
 	  	softdesModal.style.display = "block";
 	  	document.body.style.overflow = "hidden";
@@ -493,9 +454,6 @@
 			document.body.style.overflow = "auto";
 		} else if (event.target == htlModal) {
 			htlModal.style.display = "none";
-			document.body.style.overflow = "auto";
-		} else if (event.target == snakeModal) {
-			snakeModal.style.display = "none";
 			document.body.style.overflow = "auto";
 		} else if (event.target == softdesModal) {
 			softdesModal.style.display = "none";
