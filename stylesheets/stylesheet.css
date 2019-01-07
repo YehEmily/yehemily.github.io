@@ -133,10 +133,11 @@ div.about-floated {
 
 div.page-container {
     margin-top: 150px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 5%;
     text-align: center;
+    width: 43em;
 }
 
 div.portfolio {
