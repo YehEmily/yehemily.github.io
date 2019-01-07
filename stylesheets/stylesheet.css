@@ -114,21 +114,22 @@ div.home-floated {
 div.about-container {
     width: 43em;
     display: inline-block;
-    margin: none;
+    margin: auto;
     visibility: visible;
 }
 
 div.about-text-container {
-    width: 43em;
+    width: 41em;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
     text-align: center;
+    padding: 1em;
 }
 
 div.about-floated {
     float: left;
-    width: 22em;
+    width: 19em;
 }
 
 div.page-container {
