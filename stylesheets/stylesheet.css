@@ -195,6 +195,15 @@ div.portfolio-internal-container {
     text-align: center;
 }
 
+div.footer {
+    text-align: center;
+    width: 100%;
+    background-color: #282828;
+    z-index: 100;
+    padding-top: 1em;
+    border-top: 1px dashed #fdca3b;
+}
+
 /*************************************************/
 
 .modal {
