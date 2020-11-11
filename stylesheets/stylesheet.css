@@ -234,8 +234,8 @@ div.footer {
 
 .modal-content {
     position: relative;
+		display: block;
     margin-left: auto;
-    display: block;
     margin-right: auto;
     padding-left: 5em;
     padding-right: 5em;
@@ -245,7 +245,12 @@ div.footer {
     border-left: 1px solid #fdca3b;
     border-right: 1px solid #fdca3b;
     text-align: left;
-    overflow: auto;
+}
+
+.modal-scrollable
+{
+ 	height: 25%;
+  overflow: auto;
 }
 
 
